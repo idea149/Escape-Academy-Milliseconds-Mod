@@ -23,6 +23,8 @@ Run Escape Academy. You should now see the Melon Loader splash screen while laun
 
 ## Installing the mod
 
+Download the mod from the [Releases Page](https://github.com/idea149/Escape-Academy-Milliseconds-Mod/releases) (MillisecondsTimer.dll)
+
 Browse to Escape Academy's installation directory
 - Steam: Right click Escape Academy -> Manage -> Browse Local Files
 - Epic: Right click Escape Academy -> Manage -> Installation -> File Browse icon
