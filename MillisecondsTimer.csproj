@@ -1,0 +1,312 @@
+<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFramework>net472</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>disable</Nullable>
+		<RootNamespace>MillisecondsTimer</RootNamespace>
+		<LangVersion>default</LangVersion>
+		<IsPackable>false</IsPackable>
+		<AssemblyVersion>1.0.0.0</AssemblyVersion>
+		<FileVersion>1.0.0.0</FileVersion>
+		<NeutralLanguage>en-US</NeutralLanguage>
+		<AssemblyName>MillisecondsTimer</AssemblyName>
+		<LangVersion>latest</LangVersion>
+		<ImplicitUsings>enable</ImplicitUsings>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Reference Include="Assembly-CSharp-firstpass">
+			<HintPath>C:\Program Files (x86)\Steam\steamapps\common\Escape Academy\Escape Academy_Data\Managed\Assembly-CSharp-firstpass.dll</HintPath>
+		</Reference>
+		<Reference Include="Assembly-CSharp">
+			<HintPath>C:\Program Files (x86)\Steam\steamapps\common\Escape Academy\Escape Academy_Data\Managed\Assembly-CSharp.dll</HintPath>
+		</Reference>
+		<Reference Include="Cinemachine">
+			<HintPath>C:\Program Files (x86)\Steam\steamapps\common\Escape Academy\Escape Academy_Data\Managed\Cinemachine.dll</HintPath>
+		</Reference>
+		<Reference Include="com.rlabrecque.steamworks.net">
+			<HintPath>C:\Program Files (x86)\Steam\steamapps\common\Escape Academy\Escape Academy_Data\Managed\com.rlabrecque.steamworks.net.dll</HintPath>
+		</Reference>
+		<Reference Include="CsvHelper">
+			<HintPath>C:\Program Files (x86)\Steam\steamapps\common\Escape Academy\Escape Academy_Data\Managed\CsvHelper.dll</HintPath>
+		</Reference>
+		<Reference Include="DOTween">
+			<HintPath>C:\Program Files (x86)\Steam\steamapps\common\Escape Academy\Escape Academy_Data\Managed\DOTween.dll</HintPath>
+		</Reference>
+		<Reference Include="DOTweenPro">
+			<HintPath>C:\Program Files (x86)\Steam\steamapps\common\Escape Academy\Escape Academy_Data\Managed\DOTweenPro.dll</HintPath>
+		</Reference>
+		<Reference Include="GameAnalytics">
+			<HintPath>C:\Program Files (x86)\Steam\steamapps\common\Escape Academy\Escape Academy_Data\Managed\GameAnalytics.dll</HintPath>
+		</Reference>
+		<Reference Include="Google.Protobuf">
+			<HintPath>C:\Program Files (x86)\Steam\steamapps\common\Escape Academy\Escape Academy_Data\Managed\Google.Protobuf.dll</HintPath>
+		</Reference>
+		<Reference Include="HBAO.Demo.Runtime">
+			<HintPath>C:\Program Files (x86)\Steam\steamapps\common\Escape Academy\Escape Academy_Data\Managed\HBAO.Demo.Runtime.dll</HintPath>
+		</Reference>
+		<Reference Include="HBAO.Demo.Universal.Runtime">
+			<HintPath>C:\Program Files (x86)\Steam\steamapps\common\Escape Academy\Escape Academy_Data\Managed\HBAO.Demo.Universal.Runtime.dll</HintPath>
+		</Reference>
+		<Reference Include="HBAO.Runtime">
+			<HintPath>C:\Program Files (x86)\Steam\steamapps\common\Escape Academy\Escape Academy_Data\Managed\HBAO.Runtime.dll</HintPath>
+		</Reference>
+		<Reference Include="HBAO.Universal.Runtime">
+			<HintPath>C:\Program Files (x86)\Steam\steamapps\common\Escape Academy\Escape Academy_Data\Managed\HBAO.Universal.Runtime.dll</HintPath>
+		</Reference>
+		<Reference Include="Microsoft.CSharp">
+			<HintPath>C:\Program Files (x86)\Steam\steamapps\common\Escape Academy\Escape Academy_Data\Managed\Microsoft.CSharp.dll</HintPath>
+		</Reference>
+		<Reference Include="Mono.Data.Sqlite">
+			<HintPath>C:\Program Files (x86)\Steam\steamapps\common\Escape Academy\Escape Academy_Data\Managed\Mono.Data.Sqlite.dll</HintPath>
+		</Reference>
+		<Reference Include="Mono.Posix">
+			<HintPath>C:\Program Files (x86)\Steam\steamapps\common\Escape Academy\Escape Academy_Data\Managed\Mono.Posix.dll</HintPath>
+		</Reference>
+		<Reference Include="NavMeshComponents">
+			<HintPath>C:\Program Files (x86)\Steam\steamapps\common\Escape Academy\Escape Academy_Data\Managed\NavMeshComponents.dll</HintPath>
+		</Reference>
+		<Reference Include="Obi">
+			<HintPath>C:\Program Files (x86)\Steam\steamapps\common\Escape Academy\Escape Academy_Data\Managed\Obi.dll</HintPath>
+		</Reference>
+		<Reference Include="PathCreator">
+			<HintPath>C:\Program Files (x86)\Steam\steamapps\common\Escape Academy\Escape Academy_Data\Managed\PathCreator.dll</HintPath>
+		</Reference>
+		<Reference Include="Photon3Unity3D">
+			<HintPath>C:\Program Files (x86)\Steam\steamapps\common\Escape Academy\Escape Academy_Data\Managed\Photon3Unity3D.dll</HintPath>
+		</Reference>
+		<Reference Include="PhotonChat">
+			<HintPath>C:\Program Files (x86)\Steam\steamapps\common\Escape Academy\Escape Academy_Data\Managed\PhotonChat.dll</HintPath>
+		</Reference>
+		<Reference Include="PhotonRealtime">
+			<HintPath>C:\Program Files (x86)\Steam\steamapps\common\Escape Academy\Escape Academy_Data\Managed\PhotonRealtime.dll</HintPath>
+		</Reference>
+		<Reference Include="PhotonUnityNetworking.Demos">
+			<HintPath>C:\Program Files (x86)\Steam\steamapps\common\Escape Academy\Escape Academy_Data\Managed\PhotonUnityNetworking.Demos.dll</HintPath>
+		</Reference>
+		<Reference Include="PhotonUnityNetworking">
+			<HintPath>C:\Program Files (x86)\Steam\steamapps\common\Escape Academy\Escape Academy_Data\Managed\PhotonUnityNetworking.dll</HintPath>
+		</Reference>
+		<Reference Include="PhotonUnityNetworking.Utilities">
+			<HintPath>C:\Program Files (x86)\Steam\steamapps\common\Escape Academy\Escape Academy_Data\Managed\PhotonUnityNetworking.Utilities.dll</HintPath>
+		</Reference>
+		<Reference Include="PhotonVoice.API">
+			<HintPath>C:\Program Files (x86)\Steam\steamapps\common\Escape Academy\Escape Academy_Data\Managed\PhotonVoice.API.dll</HintPath>
+		</Reference>
+		<Reference Include="PhotonVoice">
+			<HintPath>C:\Program Files (x86)\Steam\steamapps\common\Escape Academy\Escape Academy_Data\Managed\PhotonVoice.dll</HintPath>
+		</Reference>
+		<Reference Include="PhotonVoice.PUN">
+			<HintPath>C:\Program Files (x86)\Steam\steamapps\common\Escape Academy\Escape Academy_Data\Managed\PhotonVoice.PUN.dll</HintPath>
+		</Reference>
+		<Reference Include="Rewired_Core">
+			<HintPath>C:\Program Files (x86)\Steam\steamapps\common\Escape Academy\Escape Academy_Data\Managed\Rewired_Core.dll</HintPath>
+		</Reference>
+		<Reference Include="Rewired_Windows">
+			<HintPath>C:\Program Files (x86)\Steam\steamapps\common\Escape Academy\Escape Academy_Data\Managed\Rewired_Windows.dll</HintPath>
+		</Reference>
+		<Reference Include="Sirenix.OdinInspector.Attributes">
+			<HintPath>C:\Program Files (x86)\Steam\steamapps\common\Escape Academy\Escape Academy_Data\Managed\Sirenix.OdinInspector.Attributes.dll</HintPath>
+		</Reference>
+		<Reference Include="Sirenix.Serialization.Config">
+			<HintPath>C:\Program Files (x86)\Steam\steamapps\common\Escape Academy\Escape Academy_Data\Managed\Sirenix.Serialization.Config.dll</HintPath>
+		</Reference>
+		<Reference Include="Sirenix.Serialization">
+			<HintPath>C:\Program Files (x86)\Steam\steamapps\common\Escape Academy\Escape Academy_Data\Managed\Sirenix.Serialization.dll</HintPath>
+		</Reference>
+		<Reference Include="Sirenix.Utilities">
+			<HintPath>C:\Program Files (x86)\Steam\steamapps\common\Escape Academy\Escape Academy_Data\Managed\Sirenix.Utilities.dll</HintPath>
+		</Reference>
+		<Reference Include="StompyRobot.SRDebugger">
+			<HintPath>C:\Program Files (x86)\Steam\steamapps\common\Escape Academy\Escape Academy_Data\Managed\StompyRobot.SRDebugger.dll</HintPath>
+		</Reference>
+		<Reference Include="StompyRobot.SRF">
+			<HintPath>C:\Program Files (x86)\Steam\steamapps\common\Escape Academy\Escape Academy_Data\Managed\StompyRobot.SRF.dll</HintPath>
+		</Reference>
+		<Reference Include="ToonyColorsPro.Runtime">
+			<HintPath>C:\Program Files (x86)\Steam\steamapps\common\Escape Academy\Escape Academy_Data\Managed\ToonyColorsPro.Runtime.dll</HintPath>
+		</Reference>
+		<Reference Include="ToonyColorsPro2.Demo">
+			<HintPath>C:\Program Files (x86)\Steam\steamapps\common\Escape Academy\Escape Academy_Data\Managed\ToonyColorsPro2.Demo.dll</HintPath>
+		</Reference>
+		<Reference Include="UIEffect">
+			<HintPath>C:\Program Files (x86)\Steam\steamapps\common\Escape Academy\Escape Academy_Data\Managed\UIEffect.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Addressables">
+			<HintPath>C:\Program Files (x86)\Steam\steamapps\common\Escape Academy\Escape Academy_Data\Managed\Unity.Addressables.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Mathematics">
+			<HintPath>C:\Program Files (x86)\Steam\steamapps\common\Escape Academy\Escape Academy_Data\Managed\Unity.Mathematics.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Polybrush">
+			<HintPath>C:\Program Files (x86)\Steam\steamapps\common\Escape Academy\Escape Academy_Data\Managed\Unity.Polybrush.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Postprocessing.Runtime">
+			<HintPath>C:\Program Files (x86)\Steam\steamapps\common\Escape Academy\Escape Academy_Data\Managed\Unity.Postprocessing.Runtime.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.ProBuilder">
+			<HintPath>C:\Program Files (x86)\Steam\steamapps\common\Escape Academy\Escape Academy_Data\Managed\Unity.ProBuilder.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
+			<HintPath>C:\Program Files (x86)\Steam\steamapps\common\Escape Academy\Escape Academy_Data\Managed\Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.RenderPipelines.Core.Runtime">
+			<HintPath>C:\Program Files (x86)\Steam\steamapps\common\Escape Academy\Escape Academy_Data\Managed\Unity.RenderPipelines.Core.Runtime.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.RenderPipelines.Universal.Runtime">
+			<HintPath>C:\Program Files (x86)\Steam\steamapps\common\Escape Academy\Escape Academy_Data\Managed\Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.ResourceManager">
+			<HintPath>C:\Program Files (x86)\Steam\steamapps\common\Escape Academy\Escape Academy_Data\Managed\Unity.ResourceManager.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.TextMeshPro">
+			<HintPath>C:\Program Files (x86)\Steam\steamapps\common\Escape Academy\Escape Academy_Data\Managed\Unity.TextMeshPro.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Timeline">
+			<HintPath>C:\Program Files (x86)\Steam\steamapps\common\Escape Academy\Escape Academy_Data\Managed\Unity.Timeline.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.AIModule">
+			<HintPath>C:\Program Files (x86)\Steam\steamapps\common\Escape Academy\Escape Academy_Data\Managed\UnityEngine.AIModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.AndroidJNIModule">
+			<HintPath>C:\Program Files (x86)\Steam\steamapps\common\Escape Academy\Escape Academy_Data\Managed\UnityEngine.AndroidJNIModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.AnimationModule">
+			<HintPath>C:\Program Files (x86)\Steam\steamapps\common\Escape Academy\Escape Academy_Data\Managed\UnityEngine.AnimationModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.AssetBundleModule">
+			<HintPath>C:\Program Files (x86)\Steam\steamapps\common\Escape Academy\Escape Academy_Data\Managed\UnityEngine.AssetBundleModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.AudioModule">
+			<HintPath>C:\Program Files (x86)\Steam\steamapps\common\Escape Academy\Escape Academy_Data\Managed\UnityEngine.AudioModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.ClothModule">
+			<HintPath>C:\Program Files (x86)\Steam\steamapps\common\Escape Academy\Escape Academy_Data\Managed\UnityEngine.ClothModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.CoreModule">
+			<HintPath>C:\Program Files (x86)\Steam\steamapps\common\Escape Academy\Escape Academy_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.DirectorModule">
+			<HintPath>C:\Program Files (x86)\Steam\steamapps\common\Escape Academy\Escape Academy_Data\Managed\UnityEngine.DirectorModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine">
+			<HintPath>C:\Program Files (x86)\Steam\steamapps\common\Escape Academy\Escape Academy_Data\Managed\UnityEngine.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.GridModule">
+			<HintPath>C:\Program Files (x86)\Steam\steamapps\common\Escape Academy\Escape Academy_Data\Managed\UnityEngine.GridModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.ImageConversionModule">
+			<HintPath>C:\Program Files (x86)\Steam\steamapps\common\Escape Academy\Escape Academy_Data\Managed\UnityEngine.ImageConversionModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.IMGUIModule">
+			<HintPath>C:\Program Files (x86)\Steam\steamapps\common\Escape Academy\Escape Academy_Data\Managed\UnityEngine.IMGUIModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.InputLegacyModule">
+			<HintPath>C:\Program Files (x86)\Steam\steamapps\common\Escape Academy\Escape Academy_Data\Managed\UnityEngine.InputLegacyModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.InputModule">
+			<HintPath>C:\Program Files (x86)\Steam\steamapps\common\Escape Academy\Escape Academy_Data\Managed\UnityEngine.InputModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.JSONSerializeModule">
+			<HintPath>C:\Program Files (x86)\Steam\steamapps\common\Escape Academy\Escape Academy_Data\Managed\UnityEngine.JSONSerializeModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.ParticleSystemModule">
+			<HintPath>C:\Program Files (x86)\Steam\steamapps\common\Escape Academy\Escape Academy_Data\Managed\UnityEngine.ParticleSystemModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.Physics2DModule">
+			<HintPath>C:\Program Files (x86)\Steam\steamapps\common\Escape Academy\Escape Academy_Data\Managed\UnityEngine.Physics2DModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.PhysicsModule">
+			<HintPath>C:\Program Files (x86)\Steam\steamapps\common\Escape Academy\Escape Academy_Data\Managed\UnityEngine.PhysicsModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.SharedInternalsModule">
+			<HintPath>C:\Program Files (x86)\Steam\steamapps\common\Escape Academy\Escape Academy_Data\Managed\UnityEngine.SharedInternalsModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.SpriteMaskModule">
+			<HintPath>C:\Program Files (x86)\Steam\steamapps\common\Escape Academy\Escape Academy_Data\Managed\UnityEngine.SpriteMaskModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.SpriteShapeModule">
+			<HintPath>C:\Program Files (x86)\Steam\steamapps\common\Escape Academy\Escape Academy_Data\Managed\UnityEngine.SpriteShapeModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.SubsystemsModule">
+			<HintPath>C:\Program Files (x86)\Steam\steamapps\common\Escape Academy\Escape Academy_Data\Managed\UnityEngine.SubsystemsModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.TerrainModule">
+			<HintPath>C:\Program Files (x86)\Steam\steamapps\common\Escape Academy\Escape Academy_Data\Managed\UnityEngine.TerrainModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.TerrainPhysicsModule">
+			<HintPath>C:\Program Files (x86)\Steam\steamapps\common\Escape Academy\Escape Academy_Data\Managed\UnityEngine.TerrainPhysicsModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.TextCoreModule">
+			<HintPath>C:\Program Files (x86)\Steam\steamapps\common\Escape Academy\Escape Academy_Data\Managed\UnityEngine.TextCoreModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.TextRenderingModule">
+			<HintPath>C:\Program Files (x86)\Steam\steamapps\common\Escape Academy\Escape Academy_Data\Managed\UnityEngine.TextRenderingModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.TilemapModule">
+			<HintPath>C:\Program Files (x86)\Steam\steamapps\common\Escape Academy\Escape Academy_Data\Managed\UnityEngine.TilemapModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UI">
+			<HintPath>C:\Program Files (x86)\Steam\steamapps\common\Escape Academy\Escape Academy_Data\Managed\UnityEngine.UI.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UIElementsNativeModule">
+			<HintPath>C:\Program Files (x86)\Steam\steamapps\common\Escape Academy\Escape Academy_Data\Managed\UnityEngine.UIElementsNativeModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UIModule">
+			<HintPath>C:\Program Files (x86)\Steam\steamapps\common\Escape Academy\Escape Academy_Data\Managed\UnityEngine.UIModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UnityAnalyticsModule">
+			<HintPath>C:\Program Files (x86)\Steam\steamapps\common\Escape Academy\Escape Academy_Data\Managed\UnityEngine.UnityAnalyticsModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UnityWebRequestAssetBundleModule">
+			<HintPath>C:\Program Files (x86)\Steam\steamapps\common\Escape Academy\Escape Academy_Data\Managed\UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UnityWebRequestModule">
+			<HintPath>C:\Program Files (x86)\Steam\steamapps\common\Escape Academy\Escape Academy_Data\Managed\UnityEngine.UnityWebRequestModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.VFXModule">
+			<HintPath>C:\Program Files (x86)\Steam\steamapps\common\Escape Academy\Escape Academy_Data\Managed\UnityEngine.VFXModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.VideoModule">
+			<HintPath>C:\Program Files (x86)\Steam\steamapps\common\Escape Academy\Escape Academy_Data\Managed\UnityEngine.VideoModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.VRModule">
+			<HintPath>C:\Program Files (x86)\Steam\steamapps\common\Escape Academy\Escape Academy_Data\Managed\UnityEngine.VRModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.XRModule">
+			<HintPath>C:\Program Files (x86)\Steam\steamapps\common\Escape Academy\Escape Academy_Data\Managed\UnityEngine.XRModule.dll</HintPath>
+		</Reference>
+		<Reference Include="websocket-sharp">
+			<HintPath>C:\Program Files (x86)\Steam\steamapps\common\Escape Academy\Escape Academy_Data\Managed\websocket-sharp.dll</HintPath>
+		</Reference>
+		<Reference Include="YarnSpinner.Compiler">
+			<HintPath>C:\Program Files (x86)\Steam\steamapps\common\Escape Academy\Escape Academy_Data\Managed\YarnSpinner.Compiler.dll</HintPath>
+		</Reference>
+		<Reference Include="YarnSpinner">
+			<HintPath>C:\Program Files (x86)\Steam\steamapps\common\Escape Academy\Escape Academy_Data\Managed\YarnSpinner.dll</HintPath>
+		</Reference>
+		<Reference Include="YarnSpinner.Unity">
+			<HintPath>C:\Program Files (x86)\Steam\steamapps\common\Escape Academy\Escape Academy_Data\Managed\YarnSpinner.Unity.dll</HintPath>
+		</Reference>
+		<Reference Include="MelonLoader">
+			<HintPath>C:\Program Files (x86)\Steam\steamapps\common\Escape Academy\MelonLoader\MelonLoader.dll</HintPath>
+		</Reference>
+		<Reference Include="0Harmony">
+			<HintPath>C:\Program Files (x86)\Steam\steamapps\common\Escape Academy\MelonLoader\0Harmony.dll</HintPath>
+		</Reference>
+
+	</ItemGroup>
+
+	<PropertyGroup>
+		<AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+		<EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Compile Include="Core.cs" />
+	</ItemGroup>
+	
+	<Target Name="PostBuild" AfterTargets="PostBuildEvent">
+		<Exec Command="COPY &quot;$(TargetPath)&quot; &quot;C:\Program Files (x86)\Steam\steamapps\common\Escape Academy\Mods&quot;" />
+	</Target>
+</Project>
