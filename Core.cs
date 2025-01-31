@@ -16,7 +16,7 @@ using Escape.Utilities;
 using TMPro;
 using System.Security.Cryptography;
 
-[assembly: MelonInfo(typeof(MillisecondsTimer.Core), "MillisecondsTimer", "1.0.0", "morga", null)]
+[assembly: MelonInfo(typeof(MillisecondsTimer.Core), "MillisecondsTimer", "1.0.0", "idea149", null)]
 [assembly: MelonGame("CoinCrewGames", "Escape Academy")]
 
 namespace MillisecondsTimer
